@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script>
+function setValue(obj){
+    // document.getElementById("bt").value="나 눌렀어?";
+    obj.value="나 눌렀어?";
+}
+//button onclick에 setValue함수를 호출시키고 그 매개 변수에 this를 입력하면 그 버튼 자체가 담기게
+//된다 그러므로 setValue(obj) 에 버튼 자체가 담아짐
+</script>
+</head>
+<body>
+    <input type="button" value="나버튼" onclick="setValue(this)">
+</body>
+</html>
